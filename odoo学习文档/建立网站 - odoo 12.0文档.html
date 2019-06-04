@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.odoo.com/documentation/master/howtos/website.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./建立网站 - odoo 12.0文档_files/css" rel="stylesheet">
+  
+    <title>建立网站 -  odoo 12.0文档</title>
+    <link rel="stylesheet" href="./建立网站 - odoo 12.0文档_files/style.css" type="text/css">
+    <link rel="stylesheet" href="./建立网站 - odoo 12.0文档_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./建立网站 - odoo 12.0文档_files/patchqueue.css" type="text/css">
+    <script async="" src="./建立网站 - odoo 12.0文档_files/analytics.js.下载"></script><script type="text/javascript" src="./建立网站 - odoo 12.0文档_files/documentation_options.js.下载"></script>
+    <script type="text/javascript" src="./建立网站 - odoo 12.0文档_files/jquery.js.下载"></script>
+    <script type="text/javascript" src="./建立网站 - odoo 12.0文档_files/underscore.js.下载"></script>
+    <script type="text/javascript" src="./建立网站 - odoo 12.0文档_files/doctools.js.下载"></script>
+    <script type="text/javascript" src="./建立网站 - odoo 12.0文档_files/patchqueue.js.下载"></script>
+    <script type="text/javascript" src="./建立网站 - odoo 12.0文档_files/jquery.min.js.下载"></script>
+    <script type="text/javascript" src="./建立网站 - odoo 12.0文档_files/bootstrap.js.下载"></script>
+    <script type="text/javascript" src="./建立网站 - odoo 12.0文档_files/doc.js.下载"></script>
+    <script type="text/javascript" src="./建立网站 - odoo 12.0文档_files/jquery.noconflict.js.下载"></script>
+    <link rel="index" title="指数" href="https://www.odoo.com/documentation/master/genindex.html">
+    <link rel="search" title="搜索" href="https://www.odoo.com/documentation/master/search.html">
+    <link rel="next" title="构建模块" href="https://www.odoo.com/documentation/master/howtos/backend.html">
+    <link rel="prev" title="主题教程" href="https://www.odoo.com/documentation/master/howtos/themes.html"> 
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="./建立网站 - odoo 12.0文档_files/translateelement.css"></head><body style="padding-bottom: 445px;"><header class="o_main_header o_has_sub_nav o_inverted ">
+    <div class="o_main_header_main">
+      <a class="pull-left o_logo" href="https://www.odoo.com/"></a>
+      <a href="https://www.odoo.com/documentation/master/howtos/website.html#" class="o_mobile_menu_toggle visible-xs-block pull-right">
+        <span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">切换导航</font></font></span>
+        <span class="mdi-navigation-menu"></span>
+      </a>
+      <div class="o_header_buttons">
+        <a href="http://www.odoo.com/trial" class="btn btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在开始</font></font></a>
+      </div>
+      <ul class="o_primary_nav">
+        <li class="dropdown">
+          <a href="https://www.odoo.com/documentation/master/howtos/website.html#" class="dropdown-toggle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用</font></font></a>
+          <div class="dropdown-menu o_secondary_nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3 o_website_apps">
+                  <div class="o_nav_app_family">
+                    <span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 网站
+                    </font></font><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建立良好的用户体验</font></font></div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/website-builder"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站建设者</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/e-commerce"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子商务</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/blog-engine"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">博客</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/community-builder"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论坛</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/slides"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">幻灯片</font></font></a></li>
+                    <li><a href="https://adspike.odoo.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">海</font></font></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_sale_apps">
+                  <div class="o_nav_app_family">
+                    <span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 销售
+                    </font></font><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提高你的成功率</font></font></div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/sales"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">销售</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/crm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CRM</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/billing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进销存</font></font></a></li>
+                    <li class="dropdown">
+                      <a href="https://www.odoo.com/documentation/master/howtos/website.html#0" class="dropdown-toggle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">销售点</font></font></a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/point-of-sale"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">商店</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/pos-restaurant"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">餐馆</font></font></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/subscriptions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">订阅</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/sign"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标志</font></font></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_operation_apps">
+                  <div class="o_nav_app_family">
+                    <span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 操作
+                    </font></font><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这完全取决于效率</font></font></div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/accounting"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会计</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/project-management"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目</font></font></a></li>
+                    <li class="dropdown">
+                      <a href="https://www.odoo.com/documentation/master/howtos/website.html#0" class="dropdown-toggle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">人力资源</font></font></a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/recruitment"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">招聘</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/employees"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">雇员</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/expenses"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">花费</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/appraisal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">评价</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/fleet"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">舰队</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/leaves"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">树叶</font></font></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/warehouse"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">库存</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/purchase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">采购</font></font></a></li>
+                    <li class="dropdown">
+                      <a href="https://www.odoo.com/documentation/master/howtos/website.html#0" class="dropdown-toggle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制造业</font></font></a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/manufacturing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MRP</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/plm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PLM</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/maintenance"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">保养</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/quality"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">质量</font></font></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_productivity_apps">
+                  <div class="o_nav_app_family">
+                    <span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 生产力工具
+                    </font></font><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">伟大的工具=快乐的人</font></font></div>
+                  </div>
+                  <ul>
+                    <li class="dropdown">
+                      <a href="https://www.odoo.com/documentation/master/howtos/website.html#0" class="dropdown-toggle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通讯</font></font></a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/discuss"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">讨论</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/discuss-groups"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮件列表</font></font></a></li>
+                        <li><a href="https://www.odoo.com/page/notes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></a></li>
+                        <li><a href="https://www.odoo.com/documentation/master/howtos/website.html#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">服务台</font></font></a></li>
+                        <li><a href="https://www.odoo.com/documentation/master/howtos/website.html#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">约定</font></font></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/timesheet"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">时间表</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/email-marketing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子邮件营销</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/events"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">活动</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/survey"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">调查</font></font></a></li>
+                    <li><a href="https://www.odoo.com/page/live-chat"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在线聊天</font></font></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="http://www.odoo.com/apps/modules" class="o_store_link"><i class="fa fa-cube fa-fw"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 第三方应用</font></font></a>
+          </div>
+        </li>
+        <li><a href="https://www.odoo.com/page/tour"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">游览</font></font></a></li>
+        <li><a href="https://www.odoo.com/pricing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">价钱</font></font></a></li>
+        <li><a href="https://www.odoo.com/page/docs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件</font></font></a></li>
+      </ul>
+    </div>
+    <nav class="navbar o_sub_nav">
+      <div class="container">
+        <div class="navbar-header visible-xs">
+            <button type="button" class="navbar-toggle collapsed text-left btn-block" data-toggle="collapse" data-target="#o_sub-menu" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              导航
+              </font></font><span class="mdi-hardware-keyboard-arrow-down pull-right"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="o_sub-menu">
+          <ol class="o_breadcrumb breadcrumb nav navbar-left">
+              
+              
+
+
+
+
+
+    
+        
+            <li><a href="https://www.odoo.com/documentation/master/index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发人员文件</font></font></a></li>
+        
+    
+    <li class="active"><a href="https://www.odoo.com/documentation/master/howtos/website.html#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建立一个网站</font></font></a></li>
+
+              
+          </ol>
+
+          <div class="call-to-action navbar-right hidden-xs">
+            <a href="http://www.odoo.com/trial" class="btn btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在开始</font></font></a>
+          </div>
+
+          <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
+            
+              <li class="divider"></li>
+            
+
+            
+            
+
+
+<li class="versions dropdown">
+    <a class="dropdown-toggle" href="https://www.odoo.com/documentation/master/howtos/website.html#" data-toggle="dropdown"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        12.0
+    </font></font></a>
+    <ul class="dropdown-menu" role="menu">
+        
+            <li><a href="https://www.odoo.com/documentation/8.0/howtos/website.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></a></li>
+        
+            <li><a href="https://www.odoo.com/documentation/9.0/howtos/website.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></a></li>
+        
+            <li><a href="https://www.odoo.com/documentation/10.0/howtos/website.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10.0</font></font></a></li>
+        
+            <li><a href="https://www.odoo.com/documentation/11.0/howtos/website.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11.0</font></font></a></li>
+        
+            <li><a href="https://www.odoo.com/documentation/master/howtos/website.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主</font></font></a></li>
+        
+    </ul>
+</li>
+
+            
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            
+              <li class="divider"></li>
+            
+
+            
+            
+
+<li><a href="https://www.odoo.com/documentation/user/12.0/index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户</font></font></a></li>
+<li><a href="https://www.odoo.com/documentation/12.0/index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发人员</font></font></a></li>
+<li><a href="https://www.odoo.com/documentation/12.0/setup/install.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a></li>
+<li><a href="http://training.odoo.com/courses/odoo-functional"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">培训中心</font></font></a></li>
+<li><a href="https://www.odoo.com/page/odoo-white-paper"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">白皮书</font></font></a></li>
+<li><a href="https://www.odoo.com/page/legal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">法律</font></font></a></li>
+            
+
+            
+              <li class="divider"></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header><div id="wrap" class="">
+    
+    
+    
+    <figure class="card top has_banner">
+      <span class="card-img" style="background-image: url(&#39;../_static/banners/build_a_website.jpg&#39;);"></span>
+      <div class="container text-center">
+        <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 建立一个网站 </font></font></h1>
+      </div>
+    </figure>
+    
+    
+    
+      <main class="container ">
+        
+        <div class="o_content row">
+          
+          <aside style="height: 19880px;">
+            <div class="navbar-aside text-center affix-top" style="width: 239px;">
+              <ul class="nav list-group text-left"><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#creating-a-basic-module" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建基本模块</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#a-demonstration-module" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示模块</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#to-the-browser" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">到浏览器</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#templates" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></a></li><li class="list-group-item parent"><a href="https://www.odoo.com/documentation/master/howtos/website.html#storing-data-in-odoo" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在Odoo中存储数据</font></font></a><ul><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#defining-the-data-model" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定义数据模型</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#demonstration-data" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示数据</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#accessing-the-data" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问数据</font></font></a></li></ul></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#website-support" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站支持</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#urls-and-routing" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网址和路由</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#field-edition" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现场版</font></font></a></li><li class="list-group-item parent"><a href="https://www.odoo.com/documentation/master/howtos/website.html#administration-and-erp-integration" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理和ERP集成</font></font></a><ul><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#a-brief-and-incomplete-introduction-to-the-odoo-administration" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对Odoo政府的简要和不完整的介绍</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#editing-in-the-odoo-administration" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在Odoo管理中编辑</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#relations-between-models" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模型之间的关系</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#discussions-and-notifications" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">讨论和通知</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#selling-courses" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">销售课程</font></font></a></li><li class="list-group-item"><a href="https://www.odoo.com/documentation/master/howtos/website.html#altering-existing-views" class="reference internal ripple" style="position: relative; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改变现有的观点</font></font></a></li></ul></li></ul>
+              
+              <p class="gith-container"><a href="https://github.com/odoo/odoo/edit/12.0/doc/howtos/website.rst" class="gith-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                  在GitHub上编辑
+              </font></font></a></p>
+              
+            </div>
+          </aside>
+          
+          <article class="doc-body ">
+            
+            
+  <section id="building-a-website"><div role="alert" class="alert alert-warning"><h3 class="alert-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告</font></font></h3><ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本指南假定</font></font><a href="http://docs.python.org/2/tutorial/" class="reference external alert-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python的基本知识</font></font></a></li><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本指南假定</font></font><a href="https://www.odoo.com/documentation/master/setup/install.html#setup-install" class="reference internal alert-link"><span class="std-ref std"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装了Odoo</font></font></span></a></li></ul></div></section><section id="creating-a-basic-module"><h2 class="o_has_permalink_marker"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建基本模块</font></font><i class="mdi-content-link"></i></h2><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在Odoo中，通过创建模块来执行任务。</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块通过添加新行为或通过更改现有行为（包括由其他模块添加的行为）来自定义Odoo安装的行为。</font></font></p><p><a href="https://www.odoo.com/documentation/master/reference/cmdline.html#reference-cmdline-scaffold" class="reference internal"><span class="std-ref std"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Odoo的脚手架</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以设置一个基本模块。</font><font style="vertical-align: inherit;">要快速入门，只需调用：</font></font></p><div class="highlight-console"><div class="highlight"><pre><span class="gp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ./odoo-bin scaffold Academy my-modules
+</font></font></pre></div>
+</div>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这将自动创建一个</font></font><code>my-modules</code> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块目录</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font><code>academy</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">里面</font><font style="vertical-align: inherit;">有一个
+ </font><font style="vertical-align: inherit;">模块。</font><font style="vertical-align: inherit;">如果需要，该目录可以是现有模块目录，但模块名称在目录中必须是唯一的。</font></font></p></section><section id="a-demonstration-module"><h2 class="o_has_permalink_marker"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示模块</font></font><i class="mdi-content-link"></i></h2><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们有一个“完整”模块可供安装。</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">虽然它绝对没有任何我们可以安装它：</font></font></p><ul><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动Odoo服务器</font></font></p><div class="highlight-console"><div class="highlight"><pre><span class="gp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ./odoo-bin --addons-path addons，my-modules
+</font></font></pre></div>
+</div>
+</li><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转到</font></font><a href="http://localhost:8069/" class="reference external"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http：// localhost：8069</font></font></a></li><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个包含演示数据的新数据库</font></font></li><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">去</font></font><span class="menuselection"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置‣模块‣模块</font></font></span></li><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在右上角删除已</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装的</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">过滤器并搜索
+ </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学院</font></font></em></li><li>click the <span class="guilabel">Install</span> button for the <em>Academy</em> module</li></ul></section><section id="to-the-browser"><h2 class="o_has_permalink_marker">To the browser<i class="mdi-content-link"></i></h2><p><a href="https://www.odoo.com/documentation/master/reference/http.html#reference-http-controllers" class="reference internal"><span class="std-ref std">Controllers</span></a> interpret browser requests and
+send data back.</p><p>Add a simple controller and ensure it is imported by <code>__init__.py</code> (so
+Odoo can find it):</p><div class="pq-patch"><em>academy/controllers.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">from</span> <span class="nn">odoo</span> <span class="kn">import</span> <span class="n">http</span><font></font>
+<font></font>
+<span class="hll"><span class="k">class</span> <span class="nc">Academy</span><span class="p">(</span><span class="n">http</span><span class="o">.</span><span class="n">Controller</span><span class="p">):</span>
+</span><span class="hll">    <span class="nd">@http.route</span><span class="p">(</span><span class="s1">'/academy/academy/'</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="s1">'public'</span><span class="p">)</span>
+</span><span class="hll">    <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+</span><span class="hll">        <span class="k">return</span> <span class="s2">"Hello, world"</span>
+</span>
+<span class="c1">#     @http.route('/academy/academy/objects/', auth='public')</span>
+<span class="c1">#     def list(self, **kw):</span>
+</pre></div>
+</div>
+</div></div><p>Shut down your server (<code class="kbd">^C</code>) then restart it:</p><div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> ./odoo-bin --addons-path addons,my-modules
+</pre></div>
+</div>
+<p>and open a page to <a href="http://localhost:8069/academy/academy/" class="reference external">http://localhost:8069/academy/academy/</a>, you should see your
+“page” appear:</p><div><img src="./建立网站 - odoo 12.0文档_files/helloworld.png" class="img-responsive"></div></section><section id="templates"><h2 class="o_has_permalink_marker">Templates<i class="mdi-content-link"></i></h2><p>Generating HTML in Python isn’t very pleasant.</p><p>The usual solution is <a href="http://en.wikipedia.org/wiki/Web_template" class="reference external">templates</a>, pseudo-documents with placeholders and
+display logic. Odoo allows any Python templating system, but provides its
+own <a href="https://www.odoo.com/documentation/master/reference/qweb.html#reference-qweb" class="reference internal"><span class="std-ref std">QWeb</span></a> templating system which integrates with other
+features.</p><p>Create a template and ensure the template file is registered in the
+<code>__manifest__.py</code> manifest, and alter the controller to use our template:</p><div class="pq-patch"><em>academy/controllers.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Academy</span><span class="p">(</span><span class="n">http</span><span class="o">.</span><span class="n">Controller</span><span class="p">):</span>
+    <span class="nd">@http.route</span><span class="p">(</span><span class="s1">'/academy/academy/'</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="s1">'public'</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+<span class="hll">        <span class="k">return</span> <span class="n">http</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="s1">'academy.index'</span><span class="p">,</span> <span class="p">{</span>
+</span><span class="hll">            <span class="s1">'teachers'</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Diana Padilla"</span><span class="p">,</span> <span class="s2">"Jody Caroll"</span><span class="p">,</span> <span class="s2">"Lester Vaughn"</span><span class="p">],</span>
+</span><span class="hll">        <span class="p">})</span>
+</span>
+<span class="c1">#     @http.route('/academy/academy/objects/', auth='public')</span>
+<span class="c1">#     def list(self, **kw):</span>
+</pre></div>
+</div>
+</div><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;odoo&gt;</span><font></font>
+<font></font>
+<span class="hll">        <span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;title&gt;</span>Academy<span class="nt">&lt;/title&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">"teachers"</span> <span class="na">t-as=</span><span class="s">"teacher"</span><span class="nt">&gt;</span>
+</span><span class="hll">              <span class="nt">&lt;p&gt;&lt;t</span> <span class="na">t-esc=</span><span class="s">"teacher"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;/t&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/template&gt;</span>
+</span>        <span class="c">&lt;!-- &lt;template id="object"&gt; --&gt;</span>
+        <span class="c">&lt;!--   &lt;h1&gt;&lt;t t-esc="object.display_name"/&gt;&lt;/h1&gt; --&gt;</span>
+        <span class="c">&lt;!--   &lt;dl&gt; --&gt;</span>
+</pre></div>
+</div>
+</div></div><p>The templates iterates (<code>t-foreach</code>) on all the teachers (passed through the
+<em>template context</em>), and prints each teacher in its own paragraph.</p><p>Finally restart Odoo and update the module’s data (to install the template)
+by going to <span class="menuselection">Settings ‣ Modules ‣ Modules ‣
+Academy</span> and clicking <span class="guilabel">Upgrade</span>.</p><div role="alert" class="alert alert-info"><h3 class="alert-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">小费</font></font></h3><p>Alternatively, Odoo can be restarted <a href="https://www.odoo.com/documentation/master/reference/cmdline.html#cmdoption-odoo-bin-u" class="reference internal alert-link"><code class="xref std-option std">and update modules at
+the same time</code></a>:</p><div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> odoo-bin --addons-path addons,my-modules -d academy -u academy
+</pre></div>
+</div>
+</div><p>Going to <a href="http://localhost:8069/academy/academy/" class="reference external">http://localhost:8069/academy/academy/</a> should now result in:</p><img src="./建立网站 - odoo 12.0文档_files/basic-list.png" class="img-responsive"></section><section id="storing-data-in-odoo"><h2 class="o_has_permalink_marker">Storing data in Odoo<i class="mdi-content-link"></i></h2><p><a href="https://www.odoo.com/documentation/master/reference/orm.html#reference-orm-model" class="reference internal"><span class="std-ref std">Odoo models</span></a> map to database tables.</p><p>In the previous section we just displayed a list of string entered statically
+in the Python code. This doesn’t allow modifications or persistent storage
+so we’ll now move our data to the database.</p></section><section id="defining-the-data-model"><h3 class="o_has_permalink_marker">Defining the data model<i class="mdi-content-link"></i></h3><p>Define a teacher model, and ensure it is imported from <code>__init__.py</code> so it
+is correctly loaded:</p><div class="pq-patch"><em>academy/models.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">odoo</span> <span class="kn">import</span> <span class="n">models</span><span class="p">,</span> <span class="n">fields</span><span class="p">,</span> <span class="n">api</span>
+<span class="hll">
+</span><span class="hll"><span class="k">class</span> <span class="nc">Teachers</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span>    <span class="n">_name</span> <span class="o">=</span> <span class="s1">'academy.teachers'</span>
+<span class="hll">
+</span>    <span class="n">name</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Char</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div><p>Then setup <a href="https://www.odoo.com/documentation/master/reference/security.html#reference-security-acl" class="reference internal"><span class="std-ref std">basic access control</span></a> for the model
+and add them to the manifest:</p><div class="pq-patch"><em>academy/__manifest__.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>    <span class="c1"># always loaded</span>
+<span class="hll">    <span class="s1">'data'</span><span class="p">:</span> <span class="p">[</span>
+</span>        <span class="s1">'security/ir.model.access.csv'</span><span class="p">,</span>
+        <span class="s1">'templates.xml'</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="c1"># only loaded in demonstration mode</span>
+</pre></div>
+</div>
+</div><em>academy/security/ir.model.access.csv</em><div class="pq-section"><div class="highlight-guess"><div class="highlight"><pre>id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+<span class="hll">access_academy_teachers,access_academy_teachers,model_academy_teachers,,1,0,0,0
+</span></pre></div>
+</div>
+</div></div><p>this simply gives read access (<code>perm_read</code>) to all users (<code>group_id:id</code>
+left empty).</p><div role="alert" class="alert alert-info"><h3 class="alert-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意</font></font></h3><p><a href="https://www.odoo.com/documentation/master/reference/data.html#reference-data" class="reference internal alert-link"><span class="std-ref std">Data files</span></a> (XML or CSV) must be added to the
+module manifest, Python files (models or controllers) don’t but have to
+be imported from <code>__init__.py</code> (directly or indirectly)</p></div><div role="alert" class="alert alert-warning"><h3 class="alert-title">Warning</h3><p>the administrator user bypasses access control, they have access to all
+models even if not given access</p></div></section><section id="demonstration-data"><h3 class="o_has_permalink_marker">Demonstration data<i class="mdi-content-link"></i></h3><p>The second step is to add some demonstration data to the system so it’s
+possible to test it easily. This is done by adding a <code>demo</code>
+<a href="https://www.odoo.com/documentation/master/reference/data.html#reference-data" class="reference internal"><span class="std-ref std">data file</span></a>, which must be linked from the manifest:</p><div class="pq-patch"><em>academy/demo.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;odoo&gt;</span><font></font>
+<font></font>
+<span class="hll">        <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"padilla"</span> <span class="na">model=</span><span class="s">"academy.teachers"</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Diana Padilla<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"carroll"</span> <span class="na">model=</span><span class="s">"academy.teachers"</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Jody Carroll<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"vaughn"</span> <span class="na">model=</span><span class="s">"academy.teachers"</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Lester Vaughn<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/record&gt;</span>
+</span>
+<span class="nt">&lt;/odoo&gt;</span>
+</pre></div>
+</div>
+</div></div><div role="alert" class="alert alert-info"><h3 class="alert-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">小费</font></font></h3><p><a href="https://www.odoo.com/documentation/master/reference/data.html#reference-data" class="reference internal alert-link"><span class="std-ref std">Data files</span></a> can be used for demo and non-demo data.
+Demo data are only loaded in “demonstration mode” and can be used for flow
+testing and demonstration, non-demo data are always loaded and used as
+initial system setup.</p><p>In this case we’re using demonstration data because an actual user of the
+system would want to input or import their own teachers list, this list
+is only useful for testing.</p></div></section><section id="accessing-the-data"><h3 class="o_has_permalink_marker">Accessing the data<i class="mdi-content-link"></i></h3><p>The last step is to alter model and template to use our demonstration data:</p><ol><li>fetch the records from the database instead of having a static list</li><li>Because <a href="https://www.odoo.com/documentation/master/reference/orm.html#odoo.models.Model.search" title="odoo.models.Model.search" class="reference internal"><code class="xref py-meth py">search()</code></a> returns a set of records
+matching the filter (“all records” here), alter the template to print each
+teacher’s <code>name</code></li></ol><div class="pq-patch"><em>academy/controllers.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Academy</span><span class="p">(</span><span class="n">http</span><span class="o">.</span><span class="n">Controller</span><span class="p">):</span>
+    <span class="nd">@http.route</span><span class="p">(</span><span class="s1">'/academy/academy/'</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="s1">'public'</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+<span class="hll">        <span class="n">Teachers</span> <span class="o">=</span> <span class="n">http</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">env</span><span class="p">[</span><span class="s1">'academy.teachers'</span><span class="p">]</span>
+</span>        <span class="k">return</span> <span class="n">http</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="s1">'academy.index'</span><span class="p">,</span> <span class="p">{</span>
+<span class="hll">            <span class="s1">'teachers'</span><span class="p">:</span> <span class="n">Teachers</span><span class="o">.</span><span class="n">search</span><span class="p">([])</span>
+</span>        <span class="p">})</span><font></font>
+<font></font>
+<span class="c1">#     @http.route('/academy/academy/objects/', auth='public')</span>
+</pre></div>
+</div>
+</div><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre>        <span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;title&gt;</span>Academy<span class="nt">&lt;/title&gt;</span>
+            <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">"teachers"</span> <span class="na">t-as=</span><span class="s">"teacher"</span><span class="nt">&gt;</span>
+<span class="hll">                <span class="nt">&lt;p&gt;&lt;t</span> <span class="na">t-esc=</span><span class="s">"teacher.id"</span><span class="nt">/&gt;</span> <span class="nt">&lt;t</span> <span class="na">t-esc=</span><span class="s">"teacher.name"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+</span>            <span class="nt">&lt;/t&gt;</span>
+        <span class="nt">&lt;/template&gt;</span>
+        <span class="c">&lt;!-- &lt;template id="object"&gt; --&gt;</span>
+</pre></div>
+</div>
+</div></div><p>Restart the server and update the module (in order to update the manifest
+and templates and load the demo file) then navigate to
+<a href="http://localhost:8069/academy/academy/" class="reference external">http://localhost:8069/academy/academy/</a>. The page should look slightly
+different: names should simply be prefixed by a number (the database
+identifier for the teacher).</p></section><section id="website-support"><h2 class="o_has_permalink_marker">Website support<i class="mdi-content-link"></i></h2><p>Odoo bundles a module dedicated to building websites.</p><p>So far we’ve used controllers fairly directly, but Odoo 8 added deeper
+integration and a few other services (e.g. default styling, theming) via the
+<code>website</code> module.</p><ol><li>first, add <code>website</code> as a dependency to <code>academy</code></li><li>then add the <code>website=True</code> flag on the controller, this sets up a few
+new variables on <a href="https://www.odoo.com/documentation/master/reference/http.html#reference-http-request" class="reference internal"><span class="std-ref std">the request object</span></a> and
+allows using the website layout in our template</li><li>use the website layout in the template</li></ol><div class="pq-patch"><em>academy/__manifest__.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>    <span class="s1">'version'</span><span class="p">:</span> <span class="s1">'0.1'</span><span class="p">,</span><font></font>
+<font></font>
+    <span class="c1"># any module necessary for this one to work correctly</span>
+<span class="hll">    <span class="s1">'depends'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'website'</span><span class="p">],</span>
+</span>
+    <span class="c1"># always loaded</span>
+    <span class="s1">'data'</span><span class="p">:</span> <span class="p">[</span>
+</pre></div>
+</div>
+</div><em>academy/controllers.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">odoo</span> <span class="kn">import</span> <span class="n">http</span><font></font>
+<font></font>
+<span class="k">class</span> <span class="nc">Academy</span><span class="p">(</span><span class="n">http</span><span class="o">.</span><span class="n">Controller</span><span class="p">):</span>
+<span class="hll">    <span class="nd">@http.route</span><span class="p">(</span><span class="s1">'/academy/academy/'</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="s1">'public'</span><span class="p">,</span> <span class="n">website</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span>    <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+        <span class="n">Teachers</span> <span class="o">=</span> <span class="n">http</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">env</span><span class="p">[</span><span class="s1">'academy.teachers'</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">http</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="s1">'academy.index'</span><span class="p">,</span> <span class="p">{</span>
+</pre></div>
+</div>
+</div><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;odoo&gt;</span><font></font>
+<font></font>
+        <span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+<span class="hll">            <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">"website.layout"</span><span class="nt">&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">"title"</span><span class="nt">&gt;</span>Academy<span class="nt">&lt;/t&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+</span><span class="hll">                        <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">"teachers"</span> <span class="na">t-as=</span><span class="s">"teacher"</span><span class="nt">&gt;</span>
+</span><span class="hll">                            <span class="nt">&lt;p&gt;&lt;t</span> <span class="na">t-esc=</span><span class="s">"teacher.id"</span><span class="nt">/&gt;</span> <span class="nt">&lt;t</span> <span class="na">t-esc=</span><span class="s">"teacher.name"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+</span><span class="hll">                        <span class="nt">&lt;/t&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;/div&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;/div&gt;</span>
+</span>            <span class="nt">&lt;/t&gt;</span>
+        <span class="nt">&lt;/template&gt;</span>
+        <span class="c">&lt;!-- &lt;template id="object"&gt; --&gt;</span>
+</pre></div>
+</div>
+</div></div><p>After restarting the server while updating the module (in order to update the
+manifest and template) access <a href="http://localhost:8069/academy/academy/" class="reference external">http://localhost:8069/academy/academy/</a> should
+yield a nicer looking page with branding and a number of built-in page
+elements (top-level menu, footer, …)</p><img src="./建立网站 - odoo 12.0文档_files/layout.png" class="img-responsive"><p>The website layout also provides support for edition tools: click
+<span class="guilabel">Sign In</span> (in the top-right), fill the credentials in (<code>admin</code> /
+<code>admin</code> by default) then click <span class="guilabel">Log In</span>.</p><p>You’re now in Odoo “proper”: the administrative interface. For now click on
+the <span class="guilabel">Website</span> menu item (top-left corner.</p><p>We’re back in the website but as an administrator, with access to advanced
+edition features provided by the <em>website</em> support:</p><ul><li>a template code editor (<span class="menuselection">Customize ‣ HTML Editor</span>) where
+you can see and edit all templates used for the current page</li><li>the <span class="guilabel">Edit</span> button in the top-left switches to “edition mode” where
+blocks (snippets) and rich text edition are available</li><li>a number of other features such as mobile preview or <abbr title="搜索引擎优化">SEO</abbr></li></ul></section><section id="urls-and-routing"><h2 class="o_has_permalink_marker">URLs and routing<i class="mdi-content-link"></i></h2><p>Controller methods are associated with <em>routes</em> via the
+<a href="https://www.odoo.com/documentation/master/reference/http.html#odoo.http.route" title="odoo.http.route" class="reference internal"><code class="xref py-func py">route()</code></a> decorator which takes a routing string and a
+number of attributes to customise its behavior or security.</p><p>We’ve seen a “literal” routing string, which matches a URL section exactly,
+but routing strings can also use <a href="http://werkzeug.pocoo.org/docs/routing/#rule-format" class="reference external">converter patterns</a> which match bits
+of URLs and make those available as local variables. For instance we can
+create a new controller method which takes a bit of URL and prints it out:</p><div class="pq-patch"><em>academy/controllers.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>            <span class="s1">'teachers'</span><span class="p">:</span> <span class="n">Teachers</span><span class="o">.</span><span class="n">search</span><span class="p">([])</span>
+        <span class="p">})</span><font></font>
+<font></font>
+<span class="hll">    <span class="nd">@http.route</span><span class="p">(</span><span class="s1">'/academy/&lt;name&gt;/'</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="s1">'public'</span><span class="p">,</span> <span class="n">website</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class="hll">    <span class="k">def</span> <span class="nf">teacher</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span class="hll">        <span class="k">return</span> <span class="s1">'&lt;h1&gt;{}&lt;/h1&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span><span class="hll">
+</span><span class="hll">
+</span><span class="c1">#     @http.route('/academy/academy/objects/', auth='public')</span>
+<span class="c1">#     def list(self, **kw):</span>
+<span class="c1">#         return http.request.render('academy.listing', {</span>
+</pre></div>
+</div>
+</div></div><p>restart Odoo, access <a href="http://localhost:8069/academy/Alice/" class="reference external">http://localhost:8069/academy/Alice/</a> and
+<a href="http://localhost:8069/academy/Bob/" class="reference external">http://localhost:8069/academy/Bob/</a> and see the difference.</p><p>As the name indicates, <a href="http://werkzeug.pocoo.org/docs/routing/#rule-format" class="reference external">converter patterns</a> don’t just do extraction, they
+also do <em>validation</em> and <em>conversion</em>, so we can change the new controller
+to only accept integers:</p><div class="pq-patch"><em>academy/controllers.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>            <span class="s1">'teachers'</span><span class="p">:</span> <span class="n">Teachers</span><span class="o">.</span><span class="n">search</span><span class="p">([])</span>
+        <span class="p">})</span><font></font>
+<font></font>
+<span class="hll">    <span class="nd">@http.route</span><span class="p">(</span><span class="s1">'/academy/&lt;int:id&gt;/'</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="s1">'public'</span><span class="p">,</span> <span class="n">website</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class="hll">    <span class="k">def</span> <span class="nf">teacher</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+</span><span class="hll">        <span class="k">return</span> <span class="s1">'&lt;h1&gt;{} ({})&lt;/h1&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
+</span><font></font>
+<font></font>
+<span class="c1">#     @http.route('/academy/academy/objects/', auth='public')</span>
+</pre></div>
+</div>
+</div></div><p>Restart Odoo, access <a href="http://localhost:8069/academy/2" class="reference external">http://localhost:8069/academy/2</a>, note how the old value
+was a string, but the new one was converted to an integers. Try accessing
+<a href="http://localhost:8069/academy/Carol/" class="reference external">http://localhost:8069/academy/Carol/</a> and note that the page was not found:
+since “Carol” is not an integer, the route was ignored and no route could be
+found.</p><p>Odoo provides an additional converter called <code>model</code> which provides records
+directly when given their id. Let’s use this to create a generic page for
+teacher biographies:</p><div class="pq-patch"><em>academy/controllers.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>            <span class="s1">'teachers'</span><span class="p">:</span> <span class="n">Teachers</span><span class="o">.</span><span class="n">search</span><span class="p">([])</span>
+        <span class="p">})</span><font></font>
+<font></font>
+<span class="hll">    <span class="nd">@http.route</span><span class="p">(</span><span class="s1">'/academy/&lt;model("academy.teachers"):teacher&gt;/'</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="s1">'public'</span><span class="p">,</span> <span class="n">website</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class="hll">    <span class="k">def</span> <span class="nf">teacher</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">teacher</span><span class="p">):</span>
+</span><span class="hll">        <span class="k">return</span> <span class="n">http</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="s1">'academy.biography'</span><span class="p">,</span> <span class="p">{</span>
+</span><span class="hll">            <span class="s1">'person'</span><span class="p">:</span> <span class="n">teacher</span>
+</span><span class="hll">        <span class="p">})</span>
+</span><font></font>
+<font></font>
+<span class="c1">#     @http.route('/academy/academy/objects/', auth='public')</span>
+</pre></div>
+</div>
+</div><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre>                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/t&gt;</span>
+        <span class="nt">&lt;/template&gt;</span>
+<span class="hll">        <span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">"biography"</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">"website.layout"</span><span class="nt">&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">"title"</span><span class="nt">&gt;</span>Academy<span class="nt">&lt;/t&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">/&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+</span><span class="hll">                        <span class="nt">&lt;p&gt;&lt;t</span> <span class="na">t-esc=</span><span class="s">"person.id"</span><span class="nt">/&gt;</span> <span class="nt">&lt;t</span> <span class="na">t-esc=</span><span class="s">"person.name"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;/div&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;/div&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">/&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;/t&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/template&gt;</span>
+</span>        <span class="c">&lt;!-- &lt;template id="object"&gt; --&gt;</span>
+        <span class="c">&lt;!--   &lt;h1&gt;&lt;t t-esc="object.display_name"/&gt;&lt;/h1&gt; --&gt;</span>
+        <span class="c">&lt;!--   &lt;dl&gt; --&gt;</span>
+</pre></div>
+</div>
+</div></div><p>then change the list of model to link to our new controller:</p><div class="pq-patch"><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml+django"><div class="highlight"><pre>                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">"teachers"</span> <span class="na">t-as=</span><span class="s">"teacher"</span><span class="nt">&gt;</span>
+<span class="hll">                            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">t-attf-href=</span><span class="s">"/academy/</span><span class="cp">{{</span> <span class="nv">slug</span><span class="o">(</span><span class="nv">teacher</span><span class="o">)</span> <span class="cp">}}</span><span class="s">"</span><span class="nt">&gt;</span>
+</span><span class="hll">                              <span class="nt">&lt;t</span> <span class="na">t-esc=</span><span class="s">"teacher.name"</span><span class="nt">/&gt;&lt;/a&gt;</span>
+</span><span class="hll">                            <span class="nt">&lt;/p&gt;</span>
+</span>                        <span class="nt">&lt;/t&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-xml+django"><div class="highlight"><pre>                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+<span class="hll">                        <span class="nt">&lt;h3&gt;&lt;t</span> <span class="na">t-esc=</span><span class="s">"person.name"</span><span class="nt">/&gt;&lt;/h3&gt;</span>
+</span>                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+</div></div><p>Restart Odoo and upgrade the module, then you can visit each teacher’s page.
+As an exercise, try adding blocks to a teacher’s page to write a biography,
+then go to another teacher’s page and so forth. You will discover, that your
+biography is shared between all teachers, because blocks are added to the
+<em>template</em>, and the <em>biography</em> template is shared between all teachers, when
+one page is edited they’re all edited at the same time.</p></section><section id="field-edition"><h2 class="o_has_permalink_marker">Field edition<i class="mdi-content-link"></i></h2><p>Data which is specific to a record should be saved on that record, so let us
+add a new biography field to our teachers:</p><div class="pq-patch"><em>academy/models.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>    <span class="n">_name</span> <span class="o">=</span> <span class="s1">'academy.teachers'</span><font></font>
+<font></font>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Char</span><span class="p">()</span>
+<span class="hll">    <span class="n">biography</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Html</span><span class="p">()</span>
+</span></pre></div>
+</div>
+</div><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml+django"><div class="highlight"><pre>                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h3&gt;&lt;t</span> <span class="na">t-esc=</span><span class="s">"person.name"</span><span class="nt">/&gt;&lt;/h3&gt;</span>
+<span class="hll">                        <span class="nt">&lt;div&gt;&lt;t</span> <span class="na">t-esc=</span><span class="s">"person.biography"</span><span class="nt">/&gt;&lt;/div&gt;</span>
+</span>                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+</div></div><p>Restart Odoo and update the views, reload the teacher’s page and… the field
+is invisible since it contains nothing.</p><p>For record fields, templates can use a special <code>t-field</code> directive which
+allows editing the field content from the website using field-specific
+interfaces. Change the <em>person</em> template to use <code>t-field</code>:</p><div class="pq-patch"><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml+django"><div class="highlight"><pre>                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+<span class="hll">                        <span class="nt">&lt;h3</span> <span class="na">t-field=</span><span class="s">"person.name"</span><span class="nt">/&gt;</span>
+</span><span class="hll">                        <span class="nt">&lt;div</span> <span class="na">t-field=</span><span class="s">"person.biography"</span><span class="nt">/&gt;</span>
+</span>                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+</div></div><p>Restart Odoo and upgrade the module, there is now a placeholder under the
+teacher’s name and a new zone for blocks in <span class="guilabel">Edit</span> mode. Content
+dropped there is stored in the corresponding teacher’s <code>biography</code> field, and
+thus specific to that teacher.</p><p>The teacher’s name is also editable, and when saved the change is visible on
+the index page.</p><p><code>t-field</code> can also take formatting options which depend on the exact field.
+For instance if we display the modification date for a teacher’s record:</p><div class="pq-patch"><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml+django"><div class="highlight"><pre>                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h3</span> <span class="na">t-field=</span><span class="s">"person.name"</span><span class="nt">/&gt;</span>
+<span class="hll">                        <span class="nt">&lt;p&gt;</span>Last modified: <span class="nt">&lt;i</span> <span class="na">t-field=</span><span class="s">"person.write_date"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+</span>                        <span class="nt">&lt;div</span> <span class="na">t-field=</span><span class="s">"person.biography"</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div></div><p>it is displayed in a very “computery” manner and hard to read, but we could
+ask for a human-readable version:</p><div class="pq-patch"><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml+django"><div class="highlight"><pre>                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h3</span> <span class="na">t-field=</span><span class="s">"person.name"</span><span class="nt">/&gt;</span>
+<span class="hll">                        <span class="nt">&lt;p&gt;</span>Last modified: <span class="nt">&lt;i</span> <span class="na">t-field=</span><span class="s">"person.write_date"</span> <span class="na">t-options=</span><span class="s">'{"format": "long"}'</span><span class="nt">/&gt;&lt;/p&gt;</span>
+</span>                        <span class="nt">&lt;div</span> <span class="na">t-field=</span><span class="s">"person.biography"</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div></div><p>or a relative display:</p><div class="pq-patch"><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml+django"><div class="highlight"><pre>                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h3</span> <span class="na">t-field=</span><span class="s">"person.name"</span><span class="nt">/&gt;</span>
+<span class="hll">                        <span class="nt">&lt;p&gt;</span>Last modified: <span class="nt">&lt;i</span> <span class="na">t-field=</span><span class="s">"person.write_date"</span> <span class="na">t-options=</span><span class="s">'{"widget": "relative"}'</span><span class="nt">/&gt;&lt;/p&gt;</span>
+</span>                        <span class="nt">&lt;div</span> <span class="na">t-field=</span><span class="s">"person.biography"</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div></div></section><section id="administration-and-erp-integration"><h2 class="o_has_permalink_marker">Administration and ERP integration<i class="mdi-content-link"></i></h2></section><section id="a-brief-and-incomplete-introduction-to-the-odoo-administration"><h3 class="o_has_permalink_marker">A brief and incomplete introduction to the Odoo administration<i class="mdi-content-link"></i></h3><p>The Odoo administration was briefly seen during the <a href="https://www.odoo.com/documentation/master/howtos/website.html#website-support" class="reference internal">website support</a> section.
+We can go back to it using <span class="menuselection">Administrator ‣ Administrator</span> in
+the menu (or <span class="guilabel">Sign In</span> if you’re signed out).</p><p>The conceptual structure of the Odoo backend is simple:</p><ol><li>first are menus, a tree (menus can have sub-menus) of records. Menus
+without children map to…</li><li>actions. Actions have various types: links, reports, code which Odoo should
+execute or data display. Data display actions are called <em>window actions</em>,
+and tell Odoo to display a given <em>model</em> according to a set of views…</li><li>a view has a type, a broad category to which it corresponds (a list,
+a graph, a calendar) and an <em>architecture</em> which customises the way the
+model is displayed inside the view.</li></ol></section><section id="editing-in-the-odoo-administration"><h3 class="o_has_permalink_marker">Editing in the Odoo administration<i class="mdi-content-link"></i></h3><p>By default, an Odoo model is essentially invisible to a user. To make it
+visible it must be available through an action, which itself needs to be
+reachable, generally through a menu.</p><p>Let’s create a menu for our model:</p><div class="pq-patch"><em>academy/__manifest__.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>    <span class="s1">'data'</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">'security/ir.model.access.csv'</span><span class="p">,</span>
+        <span class="s1">'templates.xml'</span><span class="p">,</span>
+<span class="hll">        <span class="s1">'views.xml'</span><span class="p">,</span>
+</span>    <span class="p">],</span>
+    <span class="c1"># only loaded in demonstration mode</span>
+    <span class="s1">'demo'</span><span class="p">:</span> <span class="p">[</span>
+</pre></div>
+</div>
+</div><em>academy/views.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre><span class="hll"><span class="nt">&lt;odoo&gt;</span>
+</span><span class="hll">
+</span><span class="hll">  <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"action_academy_teachers"</span> <span class="na">model=</span><span class="s">"ir.actions.act_window"</span><span class="nt">&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Academy teachers<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"res_model"</span><span class="nt">&gt;</span>academy.teachers<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">
+</span><span class="hll">  <span class="nt">&lt;menuitem</span> <span class="na">sequence=</span><span class="s">"0"</span> <span class="na">id=</span><span class="s">"menu_academy"</span> <span class="na">name=</span><span class="s">"Academy"</span><span class="nt">/&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">"menu_academy_content"</span> <span class="na">parent=</span><span class="s">"menu_academy"</span>
+</span><span class="hll">            <span class="na">name=</span><span class="s">"Academy Content"</span><span class="nt">/&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">"menu_academy_content_teachers"</span>
+</span><span class="hll">            <span class="na">parent=</span><span class="s">"menu_academy_content"</span>
+</span><span class="hll">            <span class="na">action=</span><span class="s">"action_academy_teachers"</span><span class="nt">/&gt;</span>
+</span></pre></div>
+</div>
+</div></div><p>then accessing <a href="http://localhost:8069/web/" class="reference external">http://localhost:8069/web/</a> in the top left should be a menu
+<span class="guilabel">Academy</span>, which is selected by default, as it is the first menu,
+and having opened a listing of teachers. From the listing it is possible to
+<span class="guilabel">Create</span> new teacher records, and to switch to the “form” by-record
+view.</p><p>If there is no definition of how to present records (a
+<a href="https://www.odoo.com/documentation/master/reference/views.html#reference-views" class="reference internal"><span class="std-ref std">view</span></a>) Odoo will automatically create a basic one
+on-the-fly. In our case it works for the “list” view for now (only displays
+the teacher’s name) but in the “form” view the HTML <code>biography</code> field is
+displayed side-by-side with the <code>name</code> field and not given enough space.
+Let’s define a custom form view to make viewing and editing teacher records
+a better experience:</p><div class="pq-patch"><em>academy/views.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre>    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"res_model"</span><span class="nt">&gt;</span>academy.teachers<span class="nt">&lt;/field&gt;</span>
+  <span class="nt">&lt;/record&gt;</span><font></font>
+<font></font>
+<span class="hll">  <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"academy_teacher_form"</span> <span class="na">model=</span><span class="s">"ir.ui.view"</span><span class="nt">&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Academy teachers: form<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"model"</span><span class="nt">&gt;</span>academy.teachers<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"arch"</span> <span class="na">type=</span><span class="s">"xml"</span><span class="nt">&gt;</span>
+</span><span class="hll">      <span class="nt">&lt;form&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;sheet&gt;</span>
+</span><span class="hll">          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span><span class="nt">/&gt;</span> <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">/&gt;</span>
+</span><span class="hll">          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"biography"</span><span class="nt">/&gt;</span>
+</span><span class="hll">          <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"biography"</span><span class="nt">/&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/sheet&gt;</span>
+</span><span class="hll">      <span class="nt">&lt;/form&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">
+</span>  <span class="nt">&lt;menuitem</span> <span class="na">sequence=</span><span class="s">"0"</span> <span class="na">id=</span><span class="s">"menu_academy"</span> <span class="na">name=</span><span class="s">"Academy"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">"menu_academy_content"</span> <span class="na">parent=</span><span class="s">"menu_academy"</span>
+            <span class="na">name=</span><span class="s">"Academy Content"</span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+</div></div></section><section id="relations-between-models"><h3 class="o_has_permalink_marker">Relations between models<i class="mdi-content-link"></i></h3><p>We have seen a pair of “basic” fields stored directly in the record. There are
+<a href="https://www.odoo.com/documentation/master/reference/orm.html#reference-orm-fields-basic" class="reference internal"><span class="std-ref std">a number of basic fields</span></a>. The second
+broad categories of fields are <a href="https://www.odoo.com/documentation/master/reference/orm.html#reference-orm-fields-relational" class="reference internal"><span class="std-ref std">relational</span></a> and used to link records to one another
+(within a model or across models).</p><p>For demonstration, let’s create a <em>courses</em> model. Each course should have a
+<code>teacher</code> field, linking to a single teacher record, but each teacher can
+teach many courses:</p><div class="pq-patch"><em>academy/models.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>    <span class="n">name</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Char</span><span class="p">()</span>
+<span class="hll">    <span class="n">biography</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Html</span><span class="p">()</span>
+</span><span class="hll">
+</span><span class="hll"><span class="k">class</span> <span class="nc">Courses</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span class="hll">    <span class="n">_name</span> <span class="o">=</span> <span class="s1">'academy.courses'</span>
+</span><span class="hll">
+</span><span class="hll">    <span class="n">name</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Char</span><span class="p">()</span>
+</span>    <span class="n">teacher_id</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Many2one</span><span class="p">(</span><span class="s1">'academy.teachers'</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="s2">"Teacher"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><em>academy/security/ir.model.access.csv</em><div class="pq-section"><div class="highlight-guess"><div class="highlight"><pre>id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink<font></font>
+access_academy_teachers,access_academy_teachers,model_academy_teachers,,1,0,0,0<font></font>
+<span class="hll">access_academy_courses,access_academy_courses,model_academy_courses,,1,0,0,0
+</span></pre></div>
+</div>
+</div></div><p>let’s also add views so we can see and edit a course’s teacher:</p><div class="pq-patch"><em>academy/views.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre>    <span class="nt">&lt;/field&gt;</span>
+  <span class="nt">&lt;/record&gt;</span><font></font>
+<font></font>
+<span class="hll">  <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"action_academy_courses"</span> <span class="na">model=</span><span class="s">"ir.actions.act_window"</span><span class="nt">&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Academy courses<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"res_model"</span><span class="nt">&gt;</span>academy.courses<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"academy_course_search"</span> <span class="na">model=</span><span class="s">"ir.ui.view"</span><span class="nt">&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Academy courses: search<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"model"</span><span class="nt">&gt;</span>academy.courses<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"arch"</span> <span class="na">type=</span><span class="s">"xml"</span><span class="nt">&gt;</span>
+</span><span class="hll">      <span class="nt">&lt;search&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">/&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"teacher_id"</span><span class="nt">/&gt;</span>
+</span><span class="hll">      <span class="nt">&lt;/search&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"academy_course_list"</span> <span class="na">model=</span><span class="s">"ir.ui.view"</span><span class="nt">&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Academy courses: list<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"model"</span><span class="nt">&gt;</span>academy.courses<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"arch"</span> <span class="na">type=</span><span class="s">"xml"</span><span class="nt">&gt;</span>
+</span><span class="hll">      <span class="nt">&lt;tree</span> <span class="na">string=</span><span class="s">"Courses"</span><span class="nt">&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">/&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"teacher_id"</span><span class="nt">/&gt;</span>
+</span><span class="hll">      <span class="nt">&lt;/tree&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"academy_course_form"</span> <span class="na">model=</span><span class="s">"ir.ui.view"</span><span class="nt">&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Academy courses: form<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"model"</span><span class="nt">&gt;</span>academy.courses<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"arch"</span> <span class="na">type=</span><span class="s">"xml"</span><span class="nt">&gt;</span>
+</span><span class="hll">      <span class="nt">&lt;form&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;sheet&gt;</span>
+</span><span class="hll">          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span><span class="nt">/&gt;</span>
+</span><span class="hll">          <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">/&gt;</span>
+</span><span class="hll">          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"teacher_id"</span><span class="nt">/&gt;</span>
+</span><span class="hll">          <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"teacher_id"</span><span class="nt">/&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/sheet&gt;</span>
+</span><span class="hll">      <span class="nt">&lt;/form&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">
+</span>  <span class="nt">&lt;menuitem</span> <span class="na">sequence=</span><span class="s">"0"</span> <span class="na">id=</span><span class="s">"menu_academy"</span> <span class="na">name=</span><span class="s">"Academy"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">"menu_academy_content"</span> <span class="na">parent=</span><span class="s">"menu_academy"</span>
+            <span class="na">name=</span><span class="s">"Academy Content"</span><span class="nt">/&gt;</span>
+<span class="hll">  <span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">"menu_academy_content_courses"</span>
+</span><span class="hll">            <span class="na">parent=</span><span class="s">"menu_academy_content"</span>
+</span><span class="hll">            <span class="na">action=</span><span class="s">"action_academy_courses"</span><span class="nt">/&gt;</span>
+</span>  <span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">"menu_academy_content_teachers"</span>
+            <span class="na">parent=</span><span class="s">"menu_academy_content"</span>
+            <span class="na">action=</span><span class="s">"action_academy_teachers"</span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+</div></div><p>It should also be possible to create new courses directly from a teacher’s
+page, or to see all the courses they teach, so add
+<a href="https://www.odoo.com/documentation/master/reference/orm.html#odoo.fields.One2many" title="odoo.fields.One2many" class="reference internal"><code class="py-class xref py">the inverse relationship</code></a> to the <em>teachers</em>
+model:</p><div class="pq-patch"><em>academy/models.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>    <span class="n">name</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Char</span><span class="p">()</span>
+    <span class="n">biography</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Html</span><span class="p">()</span><font></font>
+<font></font>
+<span class="hll">    <span class="n">course_ids</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">One2many</span><span class="p">(</span><span class="s1">'academy.courses'</span><span class="p">,</span> <span class="s1">'teacher_id'</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="s2">"Courses"</span><span class="p">)</span>
+</span><span class="hll">
+</span><span class="k">class</span> <span class="nc">Courses</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">_name</span> <span class="o">=</span> <span class="s1">'academy.courses'</span><font></font>
+<font></font>
+</pre></div>
+</div>
+</div><em>academy/views.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre>      <span class="nt">&lt;form&gt;</span>
+        <span class="nt">&lt;sheet&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span><span class="nt">/&gt;</span> <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">/&gt;</span>
+<span class="hll">
+</span>          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"biography"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"biography"</span><span class="nt">/&gt;</span>
+<span class="hll">
+</span><span class="hll">          <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"course_ids"</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;tree</span> <span class="na">string=</span><span class="s">"Courses"</span> <span class="na">editable=</span><span class="s">"bottom"</span><span class="nt">&gt;</span>
+</span><span class="hll">              <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">/&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;/tree&gt;</span>
+</span><span class="hll">          <span class="nt">&lt;/field&gt;</span>
+</span>        <span class="nt">&lt;/sheet&gt;</span>
+      <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
+</pre></div>
+</div>
+</div></div></section><section id="discussions-and-notifications"><h3 class="o_has_permalink_marker">Discussions and notifications<i class="mdi-content-link"></i></h3><p>Odoo provides technical models, which don’t directly fulfill business needs
+but which add capabilities to business objects without having to build
+them by hand.</p><p>One of these is the <em>Chatter</em> system, part of Odoo’s email and messaging
+system, which can add notifications and discussion threads to any model.
+The model simply has to <a href="https://www.odoo.com/documentation/master/reference/orm.html#odoo.models.Model._inherit" title="odoo.models.Model._inherit" class="reference internal"><code class="xref py-attr py">_inherit</code></a>
+<code>mail.thread</code>, and add the <code>message_ids</code> field to its form view to display
+the discussion thread. Discussion threads are per-record.</p><p>For our academy, it makes sense to allow discussing courses to handle e.g.
+scheduling changes or discussions between teachers and assistants:</p><div class="pq-patch"><em>academy/models.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Courses</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+<span class="hll">    <span class="n">_name</span> <span class="o">=</span> <span class="s1">'academy.courses'</span>
+</span>    <span class="n">_inherit</span> <span class="o">=</span> <span class="s1">'mail.thread'</span><font></font>
+<font></font>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Char</span><span class="p">()</span>
+    <span class="n">teacher_id</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Many2one</span><span class="p">(</span><span class="s1">'academy.teachers'</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="s2">"Teacher"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><em>academy/views.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre>          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"teacher_id"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"teacher_id"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/sheet&gt;</span>
+<span class="hll">        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_chatter"</span><span class="nt">&gt;</span>
+</span><span class="hll">          <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"message_follower_ids"</span> <span class="na">widget=</span><span class="s">"mail_followers"</span><span class="nt">/&gt;</span>
+</span><span class="hll">          <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"message_ids"</span> <span class="na">widget=</span><span class="s">"mail_thread"</span><span class="nt">/&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/div&gt;</span>
+</span>      <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
+  <span class="nt">&lt;/record&gt;</span>
+</pre></div>
+</div>
+</div></div><p>At the bottom of each course form, there is now a discussion thread and the
+possibility for users of the system to leave messages and follow or unfollow
+discussions linked to specific courses.</p></section><section id="selling-courses"><h3 class="o_has_permalink_marker">Selling courses<i class="mdi-content-link"></i></h3><p>Odoo also provides business models which allow using or opting in business
+needs more directly. For instance the <code>website_sale</code> module sets up an
+e-commerce site based on the products in the Odoo system. We can easily make
+course subscriptions sellable by making our courses specific kinds of
+products.</p><p>Rather than the previous classical inheritance, this means replacing our
+<em>course</em> model by the <em>product</em> model, and extending products in-place (to
+add anything we need to it).</p><p>First of all we need to add a dependency on <code>website_sale</code> so we get both
+products (via <code>sale</code>) and the ecommerce interface:</p><div class="pq-patch"><em>academy/__manifest__.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>    <span class="s1">'version'</span><span class="p">:</span> <span class="s1">'0.1'</span><span class="p">,</span><font></font>
+<font></font>
+    <span class="c1"># any module necessary for this one to work correctly</span>
+<span class="hll">    <span class="s1">'depends'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'website_sale'</span><span class="p">],</span>
+</span>
+    <span class="c1"># always loaded</span>
+    <span class="s1">'data'</span><span class="p">:</span> <span class="p">[</span>
+</pre></div>
+</div>
+</div></div><p>restart Odoo, update your module, there is now a <span class="guilabel">Shop</span> section in
+the website, listing a number of pre-filled (via demonstration data) products.</p><p>The second step is to replace the <em>courses</em> model by <code>product.template</code>,
+and add a new category of product for courses:</p><div class="pq-patch"><em>academy/__manifest__.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>        <span class="s1">'security/ir.model.access.csv'</span><span class="p">,</span>
+        <span class="s1">'templates.xml'</span><span class="p">,</span>
+        <span class="s1">'views.xml'</span><span class="p">,</span>
+<span class="hll">        <span class="s1">'data.xml'</span><span class="p">,</span>
+</span>    <span class="p">],</span>
+    <span class="c1"># only loaded in demonstration mode</span>
+    <span class="s1">'demo'</span><span class="p">:</span> <span class="p">[</span>
+</pre></div>
+</div>
+</div><em>academy/data.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre><span class="hll"><span class="nt">&lt;odoo&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">"product.public.category"</span> <span class="na">id=</span><span class="s">"category_courses"</span><span class="nt">&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Courses<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"parent_id"</span> <span class="na">ref=</span><span class="s">"website_sale.categ_others"</span><span class="nt">/&gt;</span>
+</span><span class="hll">  <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll"><span class="nt">&lt;/odoo&gt;</span>
+</span></pre></div>
+</div>
+</div><em>academy/demo.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre>            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Lester Vaughn<span class="nt">&lt;/field&gt;</span>
+        <span class="nt">&lt;/record&gt;</span><font></font>
+<font></font>
+<span class="hll">        <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"course0"</span> <span class="na">model=</span><span class="s">"product.template"</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Course 0<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"teacher_id"</span> <span class="na">ref=</span><span class="s">"padilla"</span><span class="nt">/&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"public_categ_ids"</span> <span class="na">eval=</span><span class="s">"[(4, ref('academy.category_courses'), False)]"</span><span class="nt">/&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"website_published"</span><span class="nt">&gt;</span>True<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"list_price"</span> <span class="na">type=</span><span class="s">"float"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"type"</span><span class="nt">&gt;</span>service<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"course1"</span> <span class="na">model=</span><span class="s">"product.template"</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Course 1<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"teacher_id"</span> <span class="na">ref=</span><span class="s">"padilla"</span><span class="nt">/&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"public_categ_ids"</span> <span class="na">eval=</span><span class="s">"[(4, ref('academy.category_courses'), False)]"</span><span class="nt">/&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"website_published"</span><span class="nt">&gt;</span>True<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"list_price"</span> <span class="na">type=</span><span class="s">"float"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"type"</span><span class="nt">&gt;</span>service<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">"course2"</span> <span class="na">model=</span><span class="s">"product.template"</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"name"</span><span class="nt">&gt;</span>Course 2<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"teacher_id"</span> <span class="na">ref=</span><span class="s">"vaughn"</span><span class="nt">/&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"public_categ_ids"</span> <span class="na">eval=</span><span class="s">"[(4, ref('academy.category_courses'), False)]"</span><span class="nt">/&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"website_published"</span><span class="nt">&gt;</span>True<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"list_price"</span> <span class="na">type=</span><span class="s">"float"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">"type"</span><span class="nt">&gt;</span>service<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">
+</span><span class="nt">&lt;/odoo&gt;</span>
+</pre></div>
+</div>
+</div><em>academy/models.py</em><div class="pq-section"><div class="highlight-python"><div class="highlight"><pre>    <span class="n">name</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Char</span><span class="p">()</span>
+    <span class="n">biography</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Html</span><span class="p">()</span><font></font>
+<font></font>
+<span class="hll">    <span class="n">course_ids</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">One2many</span><span class="p">(</span><span class="s1">'product.template'</span><span class="p">,</span> <span class="s1">'teacher_id'</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="s2">"Courses"</span><span class="p">)</span>
+</span>
+<span class="k">class</span> <span class="nc">Courses</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+<span class="hll">    <span class="n">_inherit</span> <span class="o">=</span> <span class="s1">'product.template'</span>
+</span>
+    <span class="n">teacher_id</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Many2one</span><span class="p">(</span><span class="s1">'academy.teachers'</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="s2">"Teacher"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><em>academy/security/ir.model.access.csv</em><div class="pq-section"><div class="highlight-guess"><div class="highlight"><pre>id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink<font></font>
+access_academy_teachers,access_academy_teachers,model_academy_teachers,,1,0,0,0<font></font>
+</pre></div>
+</div>
+</div><em>academy/views.xml</em><div class="pq-section"><div class="highlight-xml"><div class="highlight"><pre>    <span class="nt">&lt;/field&gt;</span>
+  <span class="nt">&lt;/record&gt;</span><font></font>
+<font></font>
+  <span class="nt">&lt;menuitem</span> <span class="na">sequence=</span><span class="s">"0"</span> <span class="na">id=</span><span class="s">"menu_academy"</span> <span class="na">name=</span><span class="s">"Academy"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">"menu_academy_content"</span> <span class="na">parent=</span><span class="s">"menu_academy"</span>
+            <span class="na">name=</span><span class="s">"Academy Content"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">"menu_academy_content_teachers"</span>
+            <span class="na">parent=</span><span class="s">"menu_academy_content"</span>
+            <span class="na">action=</span><span class="s">"action_academy_teachers"</span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+</div></div><p>With this installed, a few courses are now available in the <span class="guilabel">Shop</span>,
+though they may have to be looked for.</p><div role="alert" class="alert alert-info"><h3 class="alert-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意</font></font></h3><ul><li>to extend a model in-place, it’s <a href="https://www.odoo.com/documentation/master/reference/orm.html#odoo.models.Model._inherit" title="odoo.models.Model._inherit" class="reference internal alert-link"><code class="xref py-attr py">inherited</code></a> without giving it a new
+<a href="https://www.odoo.com/documentation/master/reference/orm.html#odoo.models.Model._name" title="odoo.models.Model._name" class="reference internal alert-link"><code class="xref py-attr py">_name</code></a></li><li><code>product.template</code> already uses the discussions system, so we can
+remove it from our extension model</li><li>we’re creating our courses as <em>published</em> by default so they can be
+seen without having to log in</li></ul></div></section><section id="altering-existing-views"><h3 class="o_has_permalink_marker">Altering existing views<i class="mdi-content-link"></i></h3><p>So far, we have briefly seen:</p><ul><li>the creation of new models</li><li>the creation of new views</li><li>the creation of new records</li><li>the alteration of existing models</li></ul><p>We’re left with the alteration of existing records and the alteration of
+existing views. We’ll do both on the <span class="guilabel">Shop</span> pages.</p><p>View alteration is done by creating <em>extension</em> views, which are applied on
+top of the original view and alter it. These alteration views can be added or
+removed without modifying the original, making it easier to try things out and
+roll changes back.</p><p>Since our courses are free, there is no reason to display their price on the
+shop page, so we’re going to alter the view and hide the price if it’s 0. The
+first task is finding out which view displays the price, this can be done via
+<span class="menuselection">Customize ‣ HTML Editor</span> which lets us read the various
+templates involved in rendering a page. Going through a few of them, “Product
+item” looks a likely culprit.</p><p>Altering view architectures is done in 3 steps:</p><ol><li>Create a new view</li><li>Extend the view to modify by setting the new view’s <code>inherit_id</code> to the
+modified view’s external id</li><li>In the architecture, use the <code>xpath</code> tag to select and alter elements
+from the modified view</li></ol><div class="pq-patch"><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml+django"><div class="highlight"><pre>                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"oe_structure"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/t&gt;</span>
+        <span class="nt">&lt;/template&gt;</span>
+<span class="hll">
+</span><span class="hll">        <span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">"product_item_hide_no_price"</span> <span class="na">inherit_id=</span><span class="s">"website_sale.products_item"</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">"//div[hasclass('product_price')]/b"</span> <span class="na">position=</span><span class="s">"attributes"</span><span class="nt">&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;attribute</span> <span class="na">name=</span><span class="s">"t-if"</span><span class="nt">&gt;</span>product.price <span class="ni">&amp;gt;</span> 0<span class="nt">&lt;/attribute&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;/xpath&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/template&gt;</span>
+</span><span class="hll">
+</span>        <span class="c">&lt;!-- &lt;template id="object"&gt; --&gt;</span>
+        <span class="c">&lt;!--   &lt;h1&gt;&lt;t t-esc="object.display_name"/&gt;&lt;/h1&gt; --&gt;</span>
+        <span class="c">&lt;!--   &lt;dl&gt; --&gt;</span>
+</pre></div>
+</div>
+</div></div><p>The second thing we will change is making the product categories sidebar
+visible by default: <span class="menuselection">Customize ‣ Product Categories</span> lets
+you toggle a tree of product categories (used to filter the main display) on
+and off.</p><p>This is done via the <code>customize_show</code> and <code>active</code> fields of extension
+templates: an extension template (such as the one we’ve just created) can be
+<em>customize_show=True</em>. This choice will display the view in the <span class="guilabel">Customize</span>
+menu with a check box, allowing administrators to activate or disable them
+(and easily customize their website pages).</p><p>We simply need to modify the <em>Product Categories</em> record and set its default
+to <em>active=”True”</em>:</p><div class="pq-patch"><em>academy/templates.xml</em><div class="pq-section"><div class="highlight-xml+django"><div class="highlight"><pre>            <span class="nt">&lt;/xpath&gt;</span>
+        <span class="nt">&lt;/template&gt;</span><font></font>
+<font></font>
+<span class="hll">        <span class="nt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;record </font></font></span> <span class="na"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">id = </font></font></span><span class="s"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“website_sale.products_categories” </font></font></span> <span class="na"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">model = </font></font></span><span class="s"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“ir.ui.view” </font></font></span><span class="nt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt; </font></font></span>
+</span><font style="vertical-align: inherit;"><span class="hll"><span class="nt"><font style="vertical-align: inherit;">&lt;field </font></span></span><span class="hll"><span class="na"><font style="vertical-align: inherit;">name = </font></span></span><span class="hll"><span class="s"><font style="vertical-align: inherit;">“active” </font></span></span><span class="hll"><span class="na"><font style="vertical-align: inherit;">eval = </font></span></span><span class="hll"><span class="s"><font style="vertical-align: inherit;">“True” </font></span></span><span class="hll"><span class="nt"><font style="vertical-align: inherit;">/&gt; </font></span></span><span class="hll"><span class="nt"><font style="vertical-align: inherit;">&lt;/ record&gt;</font></span></span><span class="c"><font style="vertical-align: inherit;"> &lt;！ -  &lt;template id =“object”&gt;  - - &gt; </font></span><span class="c"><font style="vertical-align: inherit;">&lt;！ -  &lt;h1&gt; &lt;t t-esc =“object.display_name”/&gt; &lt;/ h1&gt;  - &gt; </font></span><span class="c"><font style="vertical-align: inherit;">&lt;！ -  &lt;dl&gt;  - &gt;</font></span></font><span class="hll">            <span class="nt"><font style="vertical-align: inherit;"></font></span> <span class="na"><font style="vertical-align: inherit;"></font></span><span class="s"><font style="vertical-align: inherit;"></font></span> <span class="na"><font style="vertical-align: inherit;"></font></span><span class="s"><font style="vertical-align: inherit;"></font></span><span class="nt"><font style="vertical-align: inherit;"></font></span>
+</span><span class="hll">        <span class="nt"><font style="vertical-align: inherit;"></font></span>
+</span><span class="hll">
+</span>        <span class="c"><font style="vertical-align: inherit;"></font></span>
+        <span class="c"><font style="vertical-align: inherit;"></font></span>
+        <span class="c"><font style="vertical-align: inherit;"></font></span>
+</pre></div>
+</div>
+</div></div><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这样，</font><font style="vertical-align: inherit;">安装</font><em><font style="vertical-align: inherit;">Academy</font></em><font style="vertical-align: inherit;">模块</font><font style="vertical-align: inherit;">时将自动启用</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Product Categories</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">侧栏</font><font style="vertical-align: inherit;">。</font></font><em><font style="vertical-align: inherit;"></font></em><font style="vertical-align: inherit;"></font></p></section>
+
+          </article>
+        </div>
+        
+        <div id="mask"></div>
+      </main>
+  </div>
+
+  <div class="floating_action_container">
+    <a id="floating_action" class="ripple" href="https://www.odoo.com/documentation/master/howtos/website.html#" style="position: relative; overflow: hidden;">
+      <i class="mdi-action-explore"></i>
+    </a>
+    <div id="floating_action_menu">
+      <span class="bubble"></span>
+      <ul class="list-group content"><li class="list-group-item ripple" style="position: relative; overflow: hidden;"><a href="https://www.odoo.com/documentation/master/howtos/website.html#creating-a-basic-module" class="reference internal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建基本模块</font></font></a></li><li class="list-group-item ripple" style="position: relative; overflow: hidden;"><a href="https://www.odoo.com/documentation/master/howtos/website.html#a-demonstration-module" class="reference internal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示模块</font></font></a></li><li class="list-group-item ripple" style="position: relative; overflow: hidden;"><a href="https://www.odoo.com/documentation/master/howtos/website.html#to-the-browser" class="reference internal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">到浏览器</font></font></a></li><li class="list-group-item ripple" style="position: relative; overflow: hidden;"><a href="https://www.odoo.com/documentation/master/howtos/website.html#templates" class="reference internal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></a></li><li class="list-group-item ripple" style="position: relative; overflow: hidden;"><a href="https://www.odoo.com/documentation/master/howtos/website.html#storing-data-in-odoo" class="reference internal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在Odoo中存储数据</font></font></a></li><li class="list-group-item ripple" style="position: relative; overflow: hidden;"><a href="https://www.odoo.com/documentation/master/howtos/website.html#website-support" class="reference internal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站支持</font></font></a></li><li class="list-group-item ripple" style="position: relative; overflow: hidden;"><a href="https://www.odoo.com/documentation/master/howtos/website.html#urls-and-routing" class="reference internal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网址和路由</font></font></a></li><li class="list-group-item ripple" style="position: relative; overflow: hidden;"><a href="https://www.odoo.com/documentation/master/howtos/website.html#field-edition" class="reference internal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现场版</font></font></a></li><li class="list-group-item ripple" style="position: relative; overflow: hidden;"><a href="https://www.odoo.com/documentation/master/howtos/website.html#administration-and-erp-integration" class="reference internal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理和ERP集成</font></font></a></li></ul>
+    </div>
+  </div>
+  <footer class="o_footer_effect">
+    <div id="footer" class="container">
+      <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
+      <div class="row">
+        <div class="col-sm-7 col-md-7 col-lg-6">
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <span class="menu_title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区</font></font></span>
+              <ul>
+                <li><a href="https://github.com/odoo/odoo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Github上</font></font></a></li>
+                <li><a href="http://www.odoo.com/page/download"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></a></li>
+                <li class="divider"></li>
+                <li><a href="http://runbot.odoo.com/runbot/repo/git-github-com-odoo-enterprise-7"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Runbot</font></font></a></li>
+                <li><a href="https://github.com/odoo/odoo/wiki/Translations"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译</font></font></a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/page/odoo-community"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮件列表</font></font></a></li>
+                <li><a href="http://www.odoo.com/forum/help-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论坛</font></font></a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <span class="menu_title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">服务</font></font></span>
+              <ul>
+                <li><a href="https://www.odoo.sh/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Odoo云平台</font></font></a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/help"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持</font></font></a></li>
+                <li><a href="https://upgrade.odoo.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">升级</font></font></a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/partners"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">寻找合作伙伴</font></font></a></li>
+                <li><a href="http://www.odoo.com/page/become-a-partner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">成为一个合伙人（参与者</font></font></a></li>
+                <li class="divider"></li>
+                <li><a href="http://training.odoo.com/courses/odoo-functional"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">培训中心</font></font></a></li>
+                <li><a href="http://www.odoo.com/page/education-program"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教育</font></font></a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/page/security"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全</font></font></a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 mb64">
+              <span class="menu_title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于我们</font></font></span>
+              <ul>
+                <li><a href="http://www.odoo.com/page/about-us"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们公司</font></font></a></li>
+                <li><a href="http://www.odoo.com/page/contactus"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系</font></font></a></li>
+                <li class="divider">
+                </li><li><a href="http://www.odoo.com/event"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">活动</font></font></a></li>
+                <li><a href="http://www.odoo.com/blog"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">博客</font></font></a></li>
+                <li><a href="http://www.odoo.com/blog/6"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">顾客</font></font></a></li>
+                <li class="divider">
+                </li><li><a href="http://www.odoo.com/jobs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作</font></font></a></li>
+                <li class="divider">
+                </li><li><a href="http://www.odoo.com/page/legal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">法律</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> | </font></font><a href="http://www.odoo.com/privacy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">隐私</font></font></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
+          <p>
+            <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Odoo是一套开源商业应用程序，可满足您公司的所有需求：CRM，电子商务，会计，库存，销售点，项目管理等
+               </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              .Odoo独特的价值主张同时也非常易于使用和完全集成。
+            </font></font></small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="o_footer_bottom">
+      <div class="container">
+        <a class="small" href="http://www.odoo.com/page/website-builder"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站制作 </font></font><span class="o_logo o_logo_inverse o_logo_15"></span></a>
+        <div class="social-links pull-right">
+          <a href="http://www.odoo.com/web/about/facebook"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.odoo.com/web/about/twitter"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.odoo.com/web/about/linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:info@odoo.com"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-52174891-1', 'auto');
+    ga('send','pageview');
+    </script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./建立网站 - odoo 12.0文档_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+  
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
